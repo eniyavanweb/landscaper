@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "eforland"
+  "defaultProject": "eforland",
+  "cli": {
+    "analytics": "f689472c-448d-4a82-a84e-6ba889b5b049"
+  }
 }
