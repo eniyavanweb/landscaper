@@ -1,18 +1,32 @@
 <header>
-  <div class="banner">
 
-    <div class="nav-bar">
-      <h1 class="logo">Landscaper</h1>
+  <div class="banner">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+      </label>
+      <label class="logo">Landscaper</label>
       <ul>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a class="active" href="#">ABOUT</a></li>
+        <li><a href="#home">SERVICES</a></li>
+        <li><a href="#Gallery">GALLERY</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
+    </nav>
+
+
+    <div id="mySidenav" class="sidenav ">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a onclick="closeNav()"  class="en-en" href="#home">SERVICES</a>
+      <a onclick="closeNav()"  class="en-en" href="#Gallery">GALLERY</a>
+      <a onclick="closeNav()"  class="en-en" href="#testimonials">TESTIMONIALS</a>
+      <a onclick="closeNav()"  class="en-en" href="#contact">CONTACT</a>
     </div>
 
-    <div class="content">
+
+    <div onclick="closeNav()"  class="content">
       <h1>
         LANDSCAPING SERVICES
       </h1>
@@ -27,7 +41,7 @@
 
   </div>
 
-  <div class="container">
+  <div onclick="closeNav()" id="home" class="container">
     <div class="row">
 
       <div class="second-content first">
@@ -72,11 +86,11 @@
   </div>
 
 
-  <div class="section-3">
+  <div onclick="closeNav()"  class="section-3">
     <div class="service">
       <div class="ser-content">
 
-        <div class="heading-sec">
+        <div  class="heading-sec">
           <h1>Our Services</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
         </div>
@@ -91,21 +105,21 @@
 
           <div class="my-service">
             <img src="assets/service-2.jpg">
-            <h1>Lawn Care</h1>
+            <h1>Landscape </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd
               commodo nibh ante facilisis bibendum dolor feugiat at.</p>
           </div>
 
           <div class="my-service">
             <img src="assets/service-3.jpg">
-            <h1>Lawn Care</h1>
+            <h1>Tree Care</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd
               commodo nibh ante facilisis bibendum dolor feugiat at.</p>
           </div>
 
           <div class="my-service">
             <img src="assets/service-4.jpg">
-            <h1>Lawn Care</h1>
+            <h1>Spring</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd
               commodo nibh ante facilisis bibendum dolor feugiat at.</p>
           </div>
@@ -115,19 +129,168 @@
   </div>
 
 
-  <div class="section-4-main">
+  <div onclick="closeNav()" id="Gallery" class="section-4-main">
     <div class="heading-sec-4">
       <h1>
         Project Gallery
       </h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    </div>
 
+    <div class="all-btn">
+      <button class="my-btn">All images</button>
     </div>
 
     <div class="image_box">
       <div class="img-content">
-        
+
+        <div class="container-3">
+          <img src="assets/01-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Lorem ipsum</div>
+          </div>
+        </div>
+
+        <div class="container-3">
+          <img src="assets/02-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Adipiscing Elit</div>
+          </div>
+        </div>
+
+
+        <div class="container-3">
+          <img src="assets/03-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Lorem ipsum</div>
+          </div>
+        </div>
+
+
+        <div class="container-3">
+          <img src="assets/04-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Adipiscing Elit</div>
+          </div>
+        </div>
+
+
+        <div class="container-3">
+          <img src="assets/05-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">John Doe</div>
+          </div>
+        </div>
+
+
+        <div class="container-3">
+          <img src="assets/06-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Dolor Sit</div>
+          </div>
+        </div>
+
+
+        <div class="container-3">
+          <img src="assets/07-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Lorem ipsum</div>
+          </div>
+        </div>
+
+        <div class="container-3">
+          <img src="assets/08-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Dolor Sit</div>
+          </div>
+        </div>
+
+        <div class="container-3">
+          <img src="assets/09-small.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Lorem ipsum</div>
+          </div>
+        </div>
+
+
+
       </div>
+    </div>
+
+  </div>
+
+
+  <div onclick="closeNav()" id="testimonials" class="section-5">
+    <div class="bg-1">
+      <div class="overlay">
+        <div class="heading-sec-5">
+          <h1>Testimonials</h1>
+          <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.<br> Sed
+            commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+          <br>
+          <br>
+          <p>- John DOE, Parker County, TX</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div onclick="closeNav()" id="contact" class="section-6">
+    <div class="contact">
+      <div class="contact-det">
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      </div>
+      <div class="contact-row">
+        <div class="details">
+          <div class="address">
+            <h3>Address</h3>
+            <p>4321 California St,<br>
+              San Francisco, CA 12345</p>
+          </div>
+
+          <div class="address">
+            <h3>WORKING HOURS</h3>
+            <p>Monday-Saturday: 07:00 - 18:00<br>
+              Sunday: CLOSED</p>
+          </div>
+
+          <div class="address">
+            <h3>CONTACT INFO</h3>
+            <p>Phone: +1 123 456 1234<br>
+              Email: info@company.com</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div  class="con-em">
+      <div class="email">
+        <div class="em"><input type="text" placeholder="Name"></div>
+        <div class="em"><input type="email" placeholder="Email"></div>
+      </div>
+      <div class="text">
+        <div><textarea placeholder="Message"></textarea></div>
+      </div>
+      <div class="send-btn">
+        <button>SEND MESSAGE</button>
+      </div>
+    </div>
+  </div>
+
+  <div onclick="closeNav()" class="footer">
+    <div class="bg-width">
+      <div class="icon-ico">
+        <ul>
+          <li><i class="fab fa-facebook-f all-icon" ></i></li>
+          <li><i class="fab fa-twitter all-icon"></i></li>
+          <li><i class="fab fa-google-plus-g all-icon"></i></li>
+
+        </ul>
+      </div>
+
     </div>
 
   </div>
